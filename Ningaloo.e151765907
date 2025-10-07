@@ -1,0 +1,18 @@
+Loading access-om3/pr144-1
+  Loading requirement: access-om3/dependencies/pr144-1/openmpi/4.1.7-alvuihq
+    access-om3/dependencies/pr144-1/access3-share/2025.08.000-fc6c6hb
+    access-om3/dependencies/pr144-1/access-cice/CICE6.6.1-0-vntypvq
+    access-om3/dependencies/pr144-1/access-mom6/2025.07.000-qiftzsw
+    access-om3/dependencies/pr144-1/access-ww3/2025.08.000-kbwh6or
+    access-om3/dependencies/pr144-1/access3/2025.08.000-se6hjna
+Currently Loaded Modulefiles:
+ 1) access-om3/dependencies/pr144-1/openmpi/4.1.7-alvuihq              10) pbs  
+ 2) access-om3/dependencies/pr144-1/access3-share/2025.08.000-fc6c6hb  
+ 3) access-om3/dependencies/pr144-1/access-cice/CICE6.6.1-0-vntypvq    
+ 4) access-om3/dependencies/pr144-1/access-mom6/2025.07.000-qiftzsw    
+ 5) access-om3/dependencies/pr144-1/access-ww3/2025.08.000-kbwh6or     
+ 6) access-om3/dependencies/pr144-1/access3/2025.08.000-se6hjna        
+ 7) access-om3/pr144-1                                                 
+ 8) nco/5.0.5                                                          
+ 9) openmpi/pr51-5/4.1.5-qg5spmh                                       
+payu: Model exited with error code 1; aborting.

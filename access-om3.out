@@ -1,0 +1,468 @@
+NOTE from PE     0: MPP_DOMAINS_SET_STACK_SIZE: stack size set to    32768.
+NOTE from PE     0: MPP_DOMAINS_SET_STACK_SIZE: stack size set to  5000000.
+NOTE from PE     0: field_manager_init:: You are using the legacy version of the field_table
+ 
+ Dumping coupler_mod/types tree
+types/
+      air_sea_gas_flux_generic/
+            implementation/
+                  ocmip2/
+                        num_parameters = 2
+                  duce/
+                        num_parameters = 1
+                  johnson/
+                        num_parameters = 2
+            num_flags = 0
+            use_atm_pressure = T
+            use_10m_wind_speed = T
+            pass_through_ice = F
+            atm/
+                  name[1] = 'pcair'
+                  name[2] = 'u10'
+                  name[3] = 'psurf'
+                  long_name[1] = 'Atmospheric concentration'
+                  long_name[2] = 'Wind speed at 10 m'
+                  long_name[3] = 'Surface atmospheric pressure'
+                  units[1] = 'mol/mol'
+                  units[2] = 'm/s'
+                  units[3] = 'Pa'
+            ice/
+                  name[1] = 'alpha'
+                  name[2] = 'csurf'
+                  name[3] = 'sc_no'
+                  long_name[1] = 'Solubility w.r.t. atmosphere'
+                  long_name[2] = 'Ocean concentration'
+                  long_name[3] = 'Schmidt number'
+                  units[1] = 'mol/m^3/atm'
+                  units[2] = 'mol/m^3'
+                  units[3] = 'dimensionless'
+            flux/
+                  name[1] = 'flux'
+                  name[2] = 'deltap'
+                  name[3] = 'kw'
+                  name[4] = 'flux0'
+                  long_name[1] = 'Surface flux'
+                  long_name[2] = 'Ocean-air delta pressure'
+                  long_name[3] = 'Piston velocity'
+                  long_name[4] = 'Surface flux no atm'
+                  units[1] = 'mol/m^2/s'
+                  units[2] = 'uatm'
+                  units[3] = 'm/s'
+                  units[4] = 'mol/m^2/s'
+      air_sea_gas_flux/
+            implementation/
+                  ocmip2/
+                        num_parameters = 2
+                  ocmip2_data/
+                        num_parameters = 2
+                  linear/
+                        num_parameters = 3
+            num_flags = 0
+            use_atm_pressure = T
+            use_10m_wind_speed = T
+            pass_through_ice = F
+            atm/
+                  name[1] = 'pcair'
+                  name[2] = 'u10'
+                  name[3] = 'psurf'
+                  long_name[1] = 'Atmospheric concentration'
+                  long_name[2] = 'Wind speed at 10 m'
+                  long_name[3] = 'Surface atmospheric pressure'
+                  units[1] = 'mol/mol'
+                  units[2] = 'm/s'
+                  units[3] = 'Pa'
+            ice/
+                  name[1] = 'alpha'
+                  name[2] = 'csurf'
+                  long_name[1] = 'Solubility from atmosphere times Schmidt number term'
+                  long_name[2] = 'Ocean concentration times Schmidt number term'
+                  units[1] = 'mol/m^3/atm'
+                  units[2] = 'mol/m^3'
+            flux/
+                  name = 'flux'
+                  long_name = 'Surface flux'
+                  units = 'mol/m^2/s'
+      air_sea_deposition/
+            implementation/
+                  dry/
+                        num_parameters = 1
+                  wet/
+                        num_parameters = 1
+            num_flags = 0
+            use_atm_pressure = F
+            use_10m_wind_speed = F
+            pass_through_ice = T
+            atm/
+                  name = 'deposition'
+                  long_name = 'Atmospheric deposition'
+                  units = 'kg/m^2/s'
+            ice/
+                  name = NULL
+                  long_name = NULL
+                  units = NULL
+            flux/
+                  name = 'flux'
+                  long_name = 'Surface deposition'
+                  units = 'mol/m^2/s'
+      land_sea_runoff/
+            implementation/
+                  river/
+                        num_parameters = 1
+            num_flags = 0
+            use_atm_pressure = F
+            use_10m_wind_speed = F
+            pass_through_ice = T
+            atm/
+                  name = 'runoff'
+                  long_name = 'Concentration in land runoff'
+                  units = 'mol/m^3'
+            ice/
+                  name = NULL
+                  long_name = NULL
+                  units = NULL
+            flux/
+                  name = 'flux'
+                  long_name = 'Concentration in land runoff'
+                  units = 'mol/m^3'
+NOTE from PE     0: open_param_file: MOM_input has been opened successfully.
+NOTE from PE     0: open_param_file: MOM_override has been opened successfully.
+NOTE from PE     0: close_param_file: MOM_input has been closed successfully.
+NOTE from PE     0: close_param_file: MOM_override has been closed successfully.
+
+
+ &GENERIC_TRACER_NML
+ DO_GENERIC_TRACER       = T,
+ DO_GENERIC_ABIOTIC      = F,
+ DO_GENERIC_AGE  = F,
+ DO_GENERIC_ARGON        = F,
+ DO_GENERIC_CFC  = F,
+ DO_GENERIC_SF6  = F,
+ DO_GENERIC_TOPAZ        = F,
+ DO_GENERIC_ERGOM        = F,
+ DO_GENERIC_BLING        = F,
+ DO_GENERIC_MINIBLING    = F,
+ DO_GENERIC_COBALT       = F,
+ DO_GENERIC_WOMBATLITE   = T,
+ FORCE_UPDATE_FLUXES     = F,
+ DO_GENERIC_BLRES        = F,
+ AS_PARAM        = gfdl_cmip6
+ /
+
+
+ &MOCSY_NML
+ BORON_FORMULATION       = l10,
+ DISSOCIATION_CONSTANTS  = m10,
+ HF_EQUILIBRIUM_CONSTANT = dg,
+ EPSLN   =  1.000000000000000E-010,
+ PRINT_OOR_WARNINGS      = F,
+ MAXIMUM_SALINITY        =   200.000000000000     ,
+ MAX_SPECIES_VALUE       =   4.00000000000000     ,
+ MINIMUM_TEMPERATURE     =  -2.00000000000000     ,
+ SAL_FLOOR_BASED_ON_ALK  = T,
+ APPLY_EPSLN_FLOOR       = T,
+ APPLY_SPECIES_CEILING   = T,
+ APPLY_SALINITY_CEILING  = T,
+ APPLY_TEMPERATURE_FLOOR = T
+ /
+
+
+ &GENERIC_WOMBATLITE_NML
+ CO2_CALC        = ocmip2    
+ /
+ ==>Note from generic_WOMBATlite(generic_WOMBATlite_register):
+ Using FMS OCMIP2 CO2 routine
+NOTE from PE     0: g_tracer_print_info: Dumping generic tracer namelists tree:
+namelists/
+      generic_wombatlite/
+            *global*/
+            no3_src_file = 'INPUT/init_tracers_modified.nc'
+            no3_src_var_name = 'no3'
+            no3_src_var_unit = 'none'
+            no3_dest_var_name = 'no3'
+            no3_dest_var_unit = 'mol kg-1'
+            no3_src_var_record = 1
+            no3_src_var_gridspec = 'NONE'
+            no3_valid_min = 0.000000000000000E+000
+            phy_src_file = 'INPUT/init_tracers_modified.nc'
+            phy_src_var_name = 'phy'
+            phy_src_var_unit = 'none'
+            phy_dest_var_name = 'phy'
+            phy_dest_var_unit = 'mol kg-1'
+            phy_src_var_record = 1
+            phy_src_var_gridspec = 'NONE'
+            phy_valid_min = 0.000000000000000E+000
+            o2_src_file = 'INPUT/init_tracers_modified.nc'
+            o2_src_var_name = 'o2'
+            o2_src_var_unit = 'none'
+            o2_dest_var_name = 'o2'
+            o2_dest_var_unit = 'mol kg-1'
+            o2_src_var_record = 1
+            o2_src_var_gridspec = 'NONE'
+            o2_valid_min = 0.000000000000000E+000
+            zoo_src_file = 'INPUT/init_tracers_modified.nc'
+            zoo_src_var_name = 'zoo'
+            zoo_src_var_unit = 'none'
+            zoo_dest_var_name = 'zoo'
+            zoo_dest_var_unit = 'mol kg-1'
+            zoo_src_var_record = 1
+            zoo_src_var_gridspec = 'NONE'
+            zoo_valid_min = 0.000000000000000E+000
+            det_src_file = 'INPUT/init_tracers_modified.nc'
+            det_src_var_name = 'det'
+            det_src_var_unit = 'none'
+            det_dest_var_name = 'det'
+            det_dest_var_unit = 'mol kg-1'
+            det_src_var_record = 1
+            det_src_var_gridspec = 'NONE'
+            det_valid_min = 0.000000000000000E+000
+            caco3_src_file = 'INPUT/init_tracers_modified.nc'
+            caco3_src_var_name = 'caco3'
+            caco3_src_var_unit = 'none'
+            caco3_dest_var_name = 'caco3'
+            caco3_dest_var_unit = 'mol kg-1'
+            caco3_src_var_record = 1
+            caco3_src_var_gridspec = 'NONE'
+            caco3_valid_min = 0.000000000000000E+000
+            adic_src_file = 'INPUT/init_tracers_modified.nc'
+            adic_src_var_name = 'adic'
+            adic_src_var_unit = 'none'
+            adic_dest_var_name = 'adic'
+            adic_dest_var_unit = 'mol kg-1'
+            adic_src_var_record = 1
+            adic_src_var_gridspec = 'NONE'
+            adic_valid_min = 0.000000000000000E+000
+            dic_src_file = 'INPUT/init_tracers_modified.nc'
+            dic_src_var_name = 'dic'
+            dic_src_var_unit = 'none'
+            dic_dest_var_name = 'dic'
+            dic_dest_var_unit = 'mol kg-1'
+            dic_src_var_record = 1
+            dic_src_var_gridspec = 'NONE'
+            dic_valid_min = 0.000000000000000E+000
+            alk_src_file = 'INPUT/init_tracers_modified.nc'
+            alk_src_var_name = 'alk'
+            alk_src_var_unit = 'none'
+            alk_dest_var_name = 'alk'
+            alk_dest_var_unit = 'mol kg-1'
+            alk_src_var_record = 1
+            alk_src_var_gridspec = 'NONE'
+            alk_valid_min = 0.000000000000000E+000
+            fe_src_file = 'INPUT/init_tracers_modified.nc'
+            fe_src_var_name = 'fe'
+            fe_src_var_unit = 'none'
+            fe_dest_var_name = 'fe'
+            fe_dest_var_unit = 'mol kg-1'
+            fe_src_var_record = 1
+            fe_src_var_gridspec = 'NONE'
+            fe_valid_min = 0.000000000000000E+000
+            caco3_sediment_src_file = 'INPUT/init_tracers_modified.nc'
+            caco3_sediment_src_var_name = 'caco3_sediment'
+            caco3_sediment_src_var_unit = 'none'
+            caco3_sediment_dest_var_name = 'caco3_sediment'
+            caco3_sediment_dest_var_unit = 'mol m-2'
+            caco3_sediment_src_var_record = 1
+            caco3_sediment_src_var_gridspec = 'NONE'
+            caco3_sediment_valid_min = 0.000000000000000E+000
+            det_sediment_src_file = 'INPUT/init_tracers_modified.nc'
+            det_sediment_src_var_name = 'det_sediment'
+            det_sediment_src_var_unit = 'none'
+            det_sediment_dest_var_name = 'det_sediment'
+            det_sediment_dest_var_unit = 'mol m-2'
+            det_sediment_src_var_record = 1
+            det_sediment_src_var_gridspec = 'NONE'
+            det_sediment_valid_min = 0.000000000000000E+000
+            no3_obc_src_file_name = 'obgc_obc.nc'
+            no3_obc_src_field_name = 'no3'
+            no3_obc_has = T
+            no3_obc_lfac_in = 3.000000000000000E-002
+            no3_obc_lfac_out = 1.00000000000000
+            phy_obc_src_file_name = 'obgc_obc.nc'
+            phy_obc_src_field_name = 'phy'
+            phy_obc_has = T
+            phy_obc_lfac_in = 3.000000000000000E-002
+            phy_obc_lfac_out = 1.00000000000000
+            o2_obc_src_file_name = 'obgc_obc.nc'
+            o2_obc_src_field_name = 'o2'
+            o2_obc_has = T
+            o2_obc_lfac_in = 3.000000000000000E-002
+            o2_obc_lfac_out = 1.00000000000000
+            zoo_obc_src_file_name = 'obgc_obc.nc'
+            zoo_obc_src_field_name = 'zoo'
+            zoo_obc_has = T
+            zoo_obc_lfac_in = 3.000000000000000E-002
+            zoo_obc_lfac_out = 1.00000000000000
+            det_obc_src_file = 'obgc_obc.nc'
+            det_obc_src_field_name = 'det'
+            det_obc_has = T
+            det_obc_lfac_in = 3.000000000000000E-002
+            det_obc_lfac_out = 1.00000000000000
+            caco3_obc_src_file_name = 'obgc_obc.nc'
+            caco3_obc_src_field_name = 'caco3'
+            caco3_obc_has = T
+            caco3_obc_lfac_in = 3.000000000000000E-002
+            caco3_obc_lfac_out = 1.00000000000000
+            adic_obc_src_file_name = 'obgc_obc.nc'
+            adic_obc_src_field_name = 'adic'
+            adic_obc_has = T
+            adic_obc_lfac_in = 3.000000000000000E-002
+            adic_obc_lfac_out = 1.00000000000000
+            dic_obc_src_file_name = 'obgc_obc.nc'
+            dic_obc_src_field_name = 'dic'
+            dic_obc_has = T
+            dic_obc_lfac_in = 3.000000000000000E-002
+            dic_obc_lfac_out = 1.00000000000000
+            alk_obc_src_file_name = 'obgc_obc.nc'
+            alk_obc_src_field_name = 'alk'
+            alk_obc_has = T
+            alk_obc_lfac_in = 3.000000000000000E-002
+            alk_obc_lfac_out = 1.00000000000000
+            fe_obc_src_file_name = 'obgc_obc.nc'
+            fe_obc_src_field_name = 'fe'
+            fe_obc_has = T
+            fe_obc_lfac_in = 3.000000000000000E-002
+            fe_obc_lfac_out = 1.00000000000000
+            caco3_sediment_obc_src_file_name = 'obgc_obc.nc'
+            caco3_sediment_obc_src_field_name = 'caco3_sediment'
+            caco3_sediment_obc_has = T
+            caco3_sediment_obc_lfac_in = 3.000000000000000E-002
+            caco3_sediment_obc_lfac_out = 1.00000000000000
+            det_sediment_obc_src_file_name = 'obgc_obc.nc'
+            det_sediment_obc_src_field_name = 'det_sediment'
+            det_sediment_obc_has = T
+            det_sediment_obc_lfac_in = 3.000000000000000E-002
+            det_sediment_obc_lfac_out = 1.00000000000000
+NOTE from PE     0: g_tracer_print_info: Number of prognostic generic tracers =   10
+NOTE from PE     0: g_tracer_print_info: Number of diagnostic generic tracers =    2
+ 
+ ==>Note from atmos_ocean_fluxes_mod(aof_set_coupler_flux):
+  Processing coupler fluxes dry_dep_fe
+ 
+ ==>Note from atmos_ocean_fluxes_mod(aof_set_coupler_flux):
+  Processing coupler fluxes co2_nat_flux
+ 
+ ==>Note from atmos_ocean_fluxes_mod(aof_set_coupler_flux):
+  Processing coupler fluxes co2_flux
+ 
+ ==>Note from atmos_ocean_fluxes_mod(aof_set_coupler_flux):
+  Processing coupler fluxes o2_flux
+ ==>Note from atmos_ocean_fluxes_mod(atmos_ocean_fluxes_init): Processing 
+           4  gas fluxes
+ 
+ Dumping fluxes tracer tree
+fluxes/
+      dry_dep_fe/
+            flux_type = 'air_sea_deposition'
+            implementation = 'dry'
+            atm_tr_index = 0
+            mol_wt = 0.000000000000000E+000
+            ice_restart_file = 'ice_wombatlite.res.nc'
+            ocean_restart_file = 'ocean_coupler_fluxes.res.nc'
+            param = 1.00000000000000
+            flag = NULL
+            flux-units = 'mol/m^2/s'
+            flux-long_name = 'Surface deposition'
+            deposition-units = 'kg/m^2/s'
+            deposition-long_name = 'Atmospheric deposition'
+      co2_nat_flux/
+            flux_type = 'air_sea_gas_flux_generic'
+            implementation = 'ocmip2'
+            atm_tr_index = 0
+            mol_wt = 44.0099500000000
+            ice_restart_file = 'ice_wombatlite.res.nc'
+            ocean_restart_file = 'ocean_wombatlite_airsea_flux.res.nc'
+            param[1] = 8.611111111111111E-007
+            param[2] = 9.756100000000000E-006
+            flag = NULL
+            flux-units = 'mol/m^2/s'
+            flux-long_name = 'Surface flux'
+            deltap-units = 'uatm'
+            deltap-long_name = 'Ocean-air delta pressure'
+            kw-units = 'm/s'
+            kw-long_name = 'Piston velocity'
+            flux0-units = 'mol/m^2/s'
+            flux0-long_name = 'Surface flux no atm'
+            pcair-units = 'mol/mol'
+            pcair-long_name = 'Atmospheric concentration'
+            u10-units = 'm/s'
+            u10-long_name = 'Wind speed at 10 m'
+            psurf-units = 'Pa'
+            psurf-long_name = 'Surface atmospheric pressure'
+            alpha-units = 'mol/m^3/atm'
+            alpha-long_name = 'Solubility w.r.t. atmosphere'
+            csurf-units = 'mol/m^3'
+            csurf-long_name = 'Ocean concentration'
+            sc_no-units = 'dimensionless'
+            sc_no-long_name = 'Schmidt number'
+      co2_flux/
+            flux_type = 'air_sea_gas_flux_generic'
+            implementation = 'ocmip2'
+            atm_tr_index = 0
+            mol_wt = 44.0099500000000
+            ice_restart_file = 'ice_wombatlite.res.nc'
+            ocean_restart_file = 'ocean_wombatlite_airsea_flux.res.nc'
+            param[1] = 8.611111111111111E-007
+            param[2] = 9.756100000000000E-006
+            flag = NULL
+            flux-units = 'mol/m^2/s'
+            flux-long_name = 'Surface flux'
+            deltap-units = 'uatm'
+            deltap-long_name = 'Ocean-air delta pressure'
+            kw-units = 'm/s'
+            kw-long_name = 'Piston velocity'
+            flux0-units = 'mol/m^2/s'
+            flux0-long_name = 'Surface flux no atm'
+            pcair-units = 'mol/mol'
+            pcair-long_name = 'Atmospheric concentration'
+            u10-units = 'm/s'
+            u10-long_name = 'Wind speed at 10 m'
+            psurf-units = 'Pa'
+            psurf-long_name = 'Surface atmospheric pressure'
+            alpha-units = 'mol/m^3/atm'
+            alpha-long_name = 'Solubility w.r.t. atmosphere'
+            csurf-units = 'mol/m^3'
+            csurf-long_name = 'Ocean concentration'
+            sc_no-units = 'dimensionless'
+            sc_no-long_name = 'Schmidt number'
+      o2_flux/
+            flux_type = 'air_sea_gas_flux_generic'
+            implementation = 'ocmip2'
+            atm_tr_index = 0
+            mol_wt = 31.9988000000000
+            ice_restart_file = 'ice_wombatlite.res.nc'
+            ocean_restart_file = 'ocean_wombatlite_airsea_flux.res.nc'
+            param[1] = 8.611111111111111E-007
+            param[2] = 9.756100000000000E-006
+            flag = NULL
+            flux-units = 'mol/m^2/s'
+            flux-long_name = 'Surface flux'
+            deltap-units = 'uatm'
+            deltap-long_name = 'Ocean-air delta pressure'
+            kw-units = 'm/s'
+            kw-long_name = 'Piston velocity'
+            flux0-units = 'mol/m^2/s'
+            flux0-long_name = 'Surface flux no atm'
+            pcair-units = 'mol/mol'
+            pcair-long_name = 'Atmospheric concentration'
+            u10-units = 'm/s'
+            u10-long_name = 'Wind speed at 10 m'
+            psurf-units = 'Pa'
+            psurf-long_name = 'Surface atmospheric pressure'
+            alpha-units = 'mol/m^3/atm'
+            alpha-long_name = 'Solubility w.r.t. atmosphere'
+            csurf-units = 'mol/m^3'
+            csurf-long_name = 'Ocean concentration'
+            sc_no-units = 'dimensionless'
+            sc_no-long_name = 'Schmidt number'
+NOTE from PE     0: callTree: ---> ocean_model_init(), ocean_model_MOM.F90
+NOTE from PE     0: open_param_file: MOM_input has been opened successfully.
+NOTE from PE     0: open_param_file: MOM_override has been opened successfully.
+
+WARNING from PE     0: MOM_file_parser : OBC_NUMBER_OF_SEGMENTS over-ridden.  Line: 'OBC_NUMBER_OF_SEGMENTS = 4' in file MOM_override.
+
+
+WARNING from PE     0: MOM_file_parser : MINIMUM_DEPTH over-ridden.  Line: 'MINIMUM_DEPTH = 11.0' in file MOM_override.
+
+NOTE from PE     0: Found the optimum layout for auto-masking. Terminating iteration...
+
+FATAL from PE     0: Couldn't auto-eliminate any land blocks. Try to increase the number of MOM6 PEs or set AUTO_MASKTABLE to False.
+

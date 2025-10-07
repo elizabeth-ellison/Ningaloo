@@ -1,0 +1,40 @@
+laboratory path:  /scratch/nm03/ee8016/access-om3
+binary path:  /scratch/nm03/ee8016/access-om3/bin
+input path:  /scratch/nm03/ee8016/access-om3/input
+work path:  /scratch/nm03/ee8016/access-om3/work
+archive path:  /scratch/nm03/ee8016/access-om3/archive
+Metadata and UUID generation is disabled. Experiment name used for archival: Ningaloo
+nruns: 1 nruns_per_submit: 1 subrun: 1
+payu: Found modules in /opt/Modules/v4.3.0
+Loading input manifest: manifests/input.yaml
+Loading restart manifest: manifests/restart.yaml
+Loading exe manifest: manifests/exe.yaml
+Setting up access-om3
+Checking exe, input and restart manifests
+Writing manifests/restart.yaml
+mod access-om3/dependencies/pr144-1/openmpi/4.1.7-alvuihq
+mod access-om3/dependencies/pr144-1/access3-share/2025.08.000-fc6c6hb
+mod access-om3/dependencies/pr144-1/access-cice/CICE6.6.1-0-vntypvq
+mod access-om3/dependencies/pr144-1/access-mom6/2025.07.000-qiftzsw
+mod access-om3/dependencies/pr144-1/access-ww3/2025.08.000-kbwh6or
+mod access-om3/dependencies/pr144-1/access3/2025.08.000-se6hjna
+mod access-om3/pr144-1
+mod nco/5.0.5
+mpirun  -wdir /scratch/nm03/ee8016/access-om3/work/Ningaloo -np 208  /scratch/nm03/ee8016/access-om3/work/Ningaloo/access-om3-MOM6
+/home/156/ee8016/access-om3/Ningaloo/access-om3.err /scratch/nm03/ee8016/access-om3/archive/Ningaloo/error_logs/access-om3.151765907.gadi-pbs.err
+/home/156/ee8016/access-om3/Ningaloo/access-om3.out /scratch/nm03/ee8016/access-om3/archive/Ningaloo/error_logs/access-om3.151765907.gadi-pbs.out
+/home/156/ee8016/access-om3/Ningaloo/job.yaml /scratch/nm03/ee8016/access-om3/archive/Ningaloo/error_logs/job.151765907.gadi-pbs.yaml
+/home/156/ee8016/access-om3/Ningaloo/env.yaml /scratch/nm03/ee8016/access-om3/archive/Ningaloo/error_logs/env.151765907.gadi-pbs.yaml
+
+======================================================================================
+                  Resource Usage on 2025-10-07 12:23:19:
+   Job Id:             151765907.gadi-pbs
+   Project:            nm03
+   Exit Status:        1
+   Service Units:      9.48
+   NCPUs Requested:    208                    NCPUs Used: 208             
+                                           CPU Time Used: 01:51:08        
+   Memory Requested:   1000.0GB              Memory Used: 121.79GB        
+   Walltime requested: 10:00:00            Walltime Used: 00:01:22        
+   JobFS requested:    10.0GB                 JobFS used: 0B              
+======================================================================================
