@@ -463,6 +463,478 @@ WARNING from PE     0: MOM_file_parser : OBC_NUMBER_OF_SEGMENTS over-ridden.  Li
 WARNING from PE     0: MOM_file_parser : MINIMUM_DEPTH over-ridden.  Line: 'MINIMUM_DEPTH = 11.0' in file MOM_override.
 
 NOTE from PE     0: Found the optimum layout for auto-masking. Terminating iteration...
+NOTE from PE     0: MOM_domains_init: reading maskmap information from MOM_auto_mask_table
+ MOM_in domain decomposition
+whalo =    4, ehalo =    4, shalo =    4, nhalo =    4
+  X-AXIS =  190 190 190 190 190 190 190 190 190 190
+  Y-AXIS =  208 207 207 207 207 207 207 207 207 207
+ MOM_inc domain decomposition
+whalo =    2, ehalo =    2, shalo =    2, nhalo =    2
+  X-AXIS =   95  95  95  95  95  95  95  95  95  95
+  Y-AXIS =  104 104 104 104 104 103 103 103 103 103
+ parse_mask_table: Number of domain regions masked in MOM_in =           10
+ MOM_in domain decomposition
+whalo =    4, ehalo =    4, shalo =    4, nhalo =    4
+  X-AXIS =  190 190 190 190 190 190 190 190 190 190
+  Y-AXIS =  189 189 188 188 188 187 188 188 188 189 189
+ MOM_inc domain decomposition
+whalo =    2, ehalo =    2, shalo =    2, nhalo =    2
+  X-AXIS =   95  95  95  95  95  95  95  95  95  95
+  Y-AXIS =   95  94  94  94  94  93  94  94  94  94  95
+NOTE from PE     0: diag_manager_mod::diag_manager_init: prepend_date only supported when diag_manager_init is called with time_init present.
+NOTE from PE     0: diag_manager_mod::diag_manager_init: You are using the legacy version of the diag table
+ MOM_in domain decomposition
+whalo =    4, ehalo =    4, shalo =    4, nhalo =    4
+  X-AXIS =  190 190 190 190 190 190 190 190 190 190
+  Y-AXIS =  189 189 188 188 188 187 188 188 188 189 189
+ MOM_in domain decomposition
+whalo =    2, ehalo =    2, shalo =    2, nhalo =    2
+  X-AXIS =   95  95  95  95  95  95  95  95  95  95
+  Y-AXIS =   95  94  94  94  94  93  94  94  94  94  95
+ MOM_MOSAIC domain decomposition
+whalo =    9, ehalo =    9, shalo =    9, nhalo =    9
+  X-AXIS =  380 380 380 380 380 380 380 380 380 380
+  Y-AXIS =  378 378 376 376 376 374 376 376 376 378 378
+ MOM_MOSAIC domain decomposition
+whalo =    4, ehalo =    4, shalo =    4, nhalo =    4
+  X-AXIS =  190 190 190 190 190 190 190 190 190 190
+  Y-AXIS =  189 189 188 188 188 187 188 188 188 189 189
 
-FATAL from PE     0: Couldn't auto-eliminate any land blocks. Try to increase the number of MOM6 PEs or set AUTO_MASKTABLE to False.
+WARNING from PE     0: MOM_file_parser : NK over-ridden.  Line: 'NK = 100' in file MOM_override.
 
+
+WARNING from PE     0: MOM_file_parser : OBC_FREESLIP_VORTICITY over-ridden.  Line: 'OBC_FREESLIP_VORTICITY = False' in file MOM_override.
+
+
+WARNING from PE     0: MOM_file_parser : OBC_COMPUTED_VORTICITY over-ridden.  Line: 'OBC_COMPUTED_VORTICITY = True' in file MOM_override.
+
+
+WARNING from PE     0: MOM_file_parser : OBC_FREESLIP_STRAIN over-ridden.  Line: 'OBC_FREESLIP_STRAIN = False' in file MOM_override.
+
+
+WARNING from PE     0: MOM_file_parser : OBC_COMPUTED_STRAIN over-ridden.  Line: 'OBC_COMPUTED_STRAIN = True' in file MOM_override.
+
+
+WARNING from PE     0: MOM_file_parser : OBC_ZERO_BIHARMONIC over-ridden.  Line: 'OBC_ZERO_BIHARMONIC = True' in file MOM_override.
+
+
+WARNING from PE     0: MOM_file_parser : OBC_TIDE_N_CONSTITUENTS over-ridden.  Line: 'OBC_TIDE_N_CONSTITUENTS = 10' in file MOM_override.
+
+
+WARNING from PE     0: MOM_file_parser : OBC_TRACER_RESERVOIR_LENGTH_SCALE_OUT over-ridden.  Line: 'OBC_TRACER_RESERVOIR_LENGTH_SCALE_OUT = 3.0E+04' in file MOM_override.
+
+
+WARNING from PE     0: MOM_file_parser : OBC_TRACER_RESERVOIR_LENGTH_SCALE_IN over-ridden.  Line: 'OBC_TRACER_RESERVOIR_LENGTH_SCALE_IN = 3000.0' in file MOM_override.
+
+
+WARNING from PE     0: MOM_file_parser : BRUSHCUTTER_MODE over-ridden.  Line: 'BRUSHCUTTER_MODE = True' in file MOM_override.
+
+
+WARNING from PE     0: MOM_file_parser : OBC_TIDE_CONSTITUENTS over-ridden.  Line: 'OBC_TIDE_CONSTITUENTS = "M2, S2, N2, K2, K1, O1, P1, Q1, MM, MF"' in file MOM_override.
+
+
+WARNING from PE     0: MOM_file_parser : TIDES over-ridden.  Line: 'TIDES = True' in file MOM_override.
+
+
+WARNING from PE     0: MOM_file_parser : OBC_TIDE_ADD_EQ_PHASE over-ridden.  Line: 'OBC_TIDE_ADD_EQ_PHASE = True' in file MOM_override.
+
+
+WARNING from PE     0: The runtime parameter TIDE_USE_EQ_PHASE is also being set consistently via its older name of OBC_TIDE_ADD_EQ_PHASE.  Please migrate to only using TIDE_USE_EQ_PHASE.
+
+
+WARNING from PE     0: MOM_file_parser : TIDE_REF_DATE over-ridden.  Line: 'TIDE_REF_DATE = 2013, 01, 01' in file MOM_override.
+
+ MOM_in domain decomposition
+whalo =    4, ehalo =    4, shalo =    4, nhalo =    4
+  X-AXIS =  190 190 190 190 190 190 190 190 190 190
+  Y-AXIS =  208 207 207 207 207 207 207 207 207 207
+ MOM_in domain decomposition
+whalo =    2, ehalo =    2, shalo =    2, nhalo =    2
+  X-AXIS =   95  95  95  95  95  95  95  95  95  95
+  Y-AXIS =  104 104 104 104 104 103 103 103 103 103
+ MOM_MOSAIC domain decomposition
+whalo =    9, ehalo =    9, shalo =    9, nhalo =    9
+  X-AXIS =  380 380 380 380 380 380 380 380 380 380
+  Y-AXIS =  416 414 414 414 414 414 414 414 414 414
+ MOM_MOSAIC domain decomposition
+whalo =    4, ehalo =    4, shalo =    4, nhalo =    4
+  X-AXIS =  190 190 190 190 190 190 190 190 190 190
+  Y-AXIS =  208 207 207 207 207 207 207 207 207 207
+
+WARNING from PE     0: The runtime parameter TIDE_USE_EQ_PHASE is also being set consistently via its older name of OBC_TIDE_ADD_EQ_PHASE.  Please migrate to only using TIDE_USE_EQ_PHASE.
+
+
+WARNING from PE     0: Open_file is appending .nc to the filename ./ocean_geometry
+
+ MOM_in domain decomposition
+whalo =    4, ehalo =    4, shalo =    4, nhalo =    4
+  X-AXIS =  190 190 190 190 190 190 190 190 190 190
+  Y-AXIS =  189 189 188 188 188 187 188 188 188 189 189
+ MOM_in domain decomposition
+whalo =    2, ehalo =    2, shalo =    2, nhalo =    2
+  X-AXIS =   95  95  95  95  95  95  95  95  95  95
+  Y-AXIS =   95  94  94  94  94  93  94  94  94  94  95
+
+WARNING from PE     3: categorize_axes: Failed to identify x- and y- axes in the axis list (nx_segment_002, ny_segment_002, time) of a variable being read from INPUT/obgc_obc.nc
+
+
+WARNING from PE    29: categorize_axes: Failed to identify x- and y- axes in the axis list (nx_segment_003, ny_segment_003, time) of a variable being read from INPUT/obgc_obc.nc
+
+
+WARNING from PE    20: categorize_axes: Failed to identify x- and y- axes in the axis list (nx_segment_004, ny_segment_004, time) of a variable being read from INPUT/obgc_obc.nc
+
+
+WARNING from PE    30: categorize_axes: Failed to identify x- and y- axes in the axis list (nx_segment_004, ny_segment_004, time) of a variable being read from INPUT/obgc_obc.nc
+
+
+WARNING from PE    49: categorize_axes: Failed to identify x- and y- axes in the axis list (nx_segment_003, ny_segment_003, time) of a variable being read from INPUT/obgc_obc.nc
+
+
+WARNING from PE    39: categorize_axes: Failed to identify x- and y- axes in the axis list (nx_segment_003, ny_segment_003, time) of a variable being read from INPUT/obgc_obc.nc
+
+
+WARNING from PE    40: categorize_axes: Failed to identify x- and y- axes in the axis list (nx_segment_004, ny_segment_004, time) of a variable being read from INPUT/obgc_obc.nc
+
+
+WARNING from PE    60: categorize_axes: Failed to identify x- and y- axes in the axis list (nx_segment_004, ny_segment_004, time) of a variable being read from INPUT/obgc_obc.nc
+
+NOTE from PE     3: time_interp_external_mod: file INPUT/tu_segment_002.nc  has only one time level
+NOTE from PE     3: time_interp_external_mod: file INPUT/tu_segment_002.nc  has only one time level
+NOTE from PE     3: time_interp_external_mod: file INPUT/tu_segment_002.nc  has only one time level
+NOTE from PE     3: time_interp_external_mod: file INPUT/tu_segment_002.nc  has only one time level
+NOTE from PE     3: time_interp_external_mod: file INPUT/tz_segment_002.nc  has only one time level
+NOTE from PE     3: time_interp_external_mod: file INPUT/tz_segment_002.nc  has only one time level
+
+WARNING from PE    50: categorize_axes: Failed to identify x- and y- axes in the axis list (nx_segment_004, ny_segment_004, time) of a variable being read from INPUT/obgc_obc.nc
+
+
+WARNING from PE    91: categorize_axes: Failed to identify x- and y- axes in the axis list (nx_segment_001, ny_segment_001, time) of a variable being read from INPUT/obgc_obc.nc
+
+NOTE from PE    20: time_interp_external_mod: file INPUT/tu_segment_004.nc  has only one time level
+NOTE from PE    29: time_interp_external_mod: file INPUT/tu_segment_003.nc  has only one time level
+NOTE from PE    20: time_interp_external_mod: file INPUT/tu_segment_004.nc  has only one time level
+
+WARNING from PE    80: categorize_axes: Failed to identify x- and y- axes in the axis list (nx_segment_004, ny_segment_004, time) of a variable being read from INPUT/obgc_obc.nc
+
+
+WARNING from PE    92: categorize_axes: Failed to identify x- and y- axes in the axis list (nx_segment_001, ny_segment_001, time) of a variable being read from INPUT/obgc_obc.nc
+
+NOTE from PE    29: time_interp_external_mod: file INPUT/tu_segment_003.nc  has only one time level
+NOTE from PE    20: time_interp_external_mod: file INPUT/tu_segment_004.nc  has only one time level
+NOTE from PE    20: time_interp_external_mod: file INPUT/tu_segment_004.nc  has only one time level
+NOTE from PE    29: time_interp_external_mod: file INPUT/tu_segment_003.nc  has only one time level
+
+WARNING from PE    94: categorize_axes: Failed to identify x- and y- axes in the axis list (nx_segment_001, ny_segment_001, time) of a variable being read from INPUT/obgc_obc.nc
+
+NOTE from PE    29: time_interp_external_mod: file INPUT/tu_segment_003.nc  has only one time level
+
+WARNING from PE    93: categorize_axes: Failed to identify x- and y- axes in the axis list (nx_segment_001, ny_segment_001, time) of a variable being read from INPUT/obgc_obc.nc
+
+NOTE from PE    20: time_interp_external_mod: file INPUT/tz_segment_004.nc  has only one time level
+
+WARNING from PE    69: categorize_axes: Failed to identify x- and y- axes in the axis list (nx_segment_003, ny_segment_003, time) of a variable being read from INPUT/obgc_obc.nc
+
+
+WARNING from PE    95: categorize_axes: Failed to identify x- and y- axes in the axis list (nx_segment_001, ny_segment_001, time) of a variable being read from INPUT/obgc_obc.nc
+
+NOTE from PE    20: time_interp_external_mod: file INPUT/tz_segment_004.nc  has only one time level
+
+WARNING from PE    96: categorize_axes: Failed to identify x- and y- axes in the axis list (nx_segment_001, ny_segment_001, time) of a variable being read from INPUT/obgc_obc.nc
+
+
+WARNING from PE    98: categorize_axes: Failed to identify x- and y- axes in the axis list (nx_segment_001, ny_segment_001, time) of a variable being read from INPUT/obgc_obc.nc
+
+
+WARNING from PE    97: categorize_axes: Failed to identify x- and y- axes in the axis list (nx_segment_001, ny_segment_001, time) of a variable being read from INPUT/obgc_obc.nc
+
+NOTE from PE    29: time_interp_external_mod: file INPUT/tz_segment_003.nc  has only one time level
+NOTE from PE    29: time_interp_external_mod: file INPUT/tz_segment_003.nc  has only one time level
+NOTE from PE    30: time_interp_external_mod: file INPUT/tu_segment_004.nc  has only one time level
+NOTE from PE    30: time_interp_external_mod: file INPUT/tu_segment_004.nc  has only one time level
+NOTE from PE    30: time_interp_external_mod: file INPUT/tu_segment_004.nc  has only one time level
+NOTE from PE    49: time_interp_external_mod: file INPUT/tu_segment_003.nc  has only one time level
+NOTE from PE    30: time_interp_external_mod: file INPUT/tu_segment_004.nc  has only one time level
+NOTE from PE    49: time_interp_external_mod: file INPUT/tu_segment_003.nc  has only one time level
+NOTE from PE    39: time_interp_external_mod: file INPUT/tu_segment_003.nc  has only one time level
+NOTE from PE    49: time_interp_external_mod: file INPUT/tu_segment_003.nc  has only one time level
+NOTE from PE    39: time_interp_external_mod: file INPUT/tu_segment_003.nc  has only one time level
+NOTE from PE    30: time_interp_external_mod: file INPUT/tz_segment_004.nc  has only one time level
+NOTE from PE    49: time_interp_external_mod: file INPUT/tu_segment_003.nc  has only one time level
+NOTE from PE    30: time_interp_external_mod: file INPUT/tz_segment_004.nc  has only one time level
+NOTE from PE    39: time_interp_external_mod: file INPUT/tu_segment_003.nc  has only one time level
+NOTE from PE    39: time_interp_external_mod: file INPUT/tu_segment_003.nc  has only one time level
+NOTE from PE    49: time_interp_external_mod: file INPUT/tz_segment_003.nc  has only one time level
+NOTE from PE    49: time_interp_external_mod: file INPUT/tz_segment_003.nc  has only one time level
+NOTE from PE    39: time_interp_external_mod: file INPUT/tz_segment_003.nc  has only one time level
+NOTE from PE    39: time_interp_external_mod: file INPUT/tz_segment_003.nc  has only one time level
+
+WARNING from PE    70: categorize_axes: Failed to identify x- and y- axes in the axis list (nx_segment_004, ny_segment_004, time) of a variable being read from INPUT/obgc_obc.nc
+
+NOTE from PE    40: time_interp_external_mod: file INPUT/tu_segment_004.nc  has only one time level
+
+WARNING from PE    89: categorize_axes: Failed to identify x- and y- axes in the axis list (nx_segment_003, ny_segment_003, time) of a variable being read from INPUT/obgc_obc.nc
+
+NOTE from PE    40: time_interp_external_mod: file INPUT/tu_segment_004.nc  has only one time level
+
+WARNING from PE    79: categorize_axes: Failed to identify x- and y- axes in the axis list (nx_segment_003, ny_segment_003, time) of a variable being read from INPUT/obgc_obc.nc
+
+
+WARNING from PE    90: categorize_axes: Failed to identify x- and y- axes in the axis list (nx_segment_001, ny_segment_001, time) of a variable being read from INPUT/obgc_obc.nc
+
+NOTE from PE    40: time_interp_external_mod: file INPUT/tu_segment_004.nc  has only one time level
+NOTE from PE    40: time_interp_external_mod: file INPUT/tu_segment_004.nc  has only one time level
+NOTE from PE    40: time_interp_external_mod: file INPUT/tz_segment_004.nc  has only one time level
+
+WARNING from PE    99: categorize_axes: Failed to identify x- and y- axes in the axis list (nx_segment_001, ny_segment_001, time) of a variable being read from INPUT/obgc_obc.nc
+
+NOTE from PE    40: time_interp_external_mod: file INPUT/tz_segment_004.nc  has only one time level
+NOTE from PE    60: time_interp_external_mod: file INPUT/tu_segment_004.nc  has only one time level
+NOTE from PE    60: time_interp_external_mod: file INPUT/tu_segment_004.nc  has only one time level
+NOTE from PE    60: time_interp_external_mod: file INPUT/tu_segment_004.nc  has only one time level
+NOTE from PE    60: time_interp_external_mod: file INPUT/tu_segment_004.nc  has only one time level
+NOTE from PE    60: time_interp_external_mod: file INPUT/tz_segment_004.nc  has only one time level
+NOTE from PE    60: time_interp_external_mod: file INPUT/tz_segment_004.nc  has only one time level
+
+WARNING from PE    59: categorize_axes: Failed to identify x- and y- axes in the axis list (nx_segment_003, ny_segment_003, time) of a variable being read from INPUT/obgc_obc.nc
+
+NOTE from PE    69: time_interp_external_mod: file INPUT/tu_segment_003.nc  has only one time level
+NOTE from PE    69: time_interp_external_mod: file INPUT/tu_segment_003.nc  has only one time level
+NOTE from PE    50: time_interp_external_mod: file INPUT/tu_segment_004.nc  has only one time level
+NOTE from PE    80: time_interp_external_mod: file INPUT/tu_segment_004.nc  has only one time level
+NOTE from PE     0: MOM_restart: Unable to find tres_x_001   queried by pointer, probably because of the suspect comparison of pointers by ASSOCIATED.
+NOTE from PE     0: MOM_restart: Unable to find tres_y_001   queried by pointer, probably because of the suspect comparison of pointers by ASSOCIATED.
+NOTE from PE     0: MOM_restart: Unable to find tres_x_002   queried by pointer, probably because of the suspect comparison of pointers by ASSOCIATED.
+NOTE from PE     0: MOM_restart: Unable to find tres_y_002   queried by pointer, probably because of the suspect comparison of pointers by ASSOCIATED.
+NOTE from PE     0: MOM_restart: Unable to find tres_x_003   queried by pointer, probably because of the suspect comparison of pointers by ASSOCIATED.
+NOTE from PE     0: MOM_restart: Unable to find tres_y_003   queried by pointer, probably because of the suspect comparison of pointers by ASSOCIATED.
+NOTE from PE     0: MOM_restart: Unable to find tres_x_004   queried by pointer, probably because of the suspect comparison of pointers by ASSOCIATED.
+NOTE from PE     0: MOM_restart: Unable to find tres_y_004   queried by pointer, probably because of the suspect comparison of pointers by ASSOCIATED.
+NOTE from PE     0: MOM_restart: Unable to find tres_x_005   queried by pointer, probably because of the suspect comparison of pointers by ASSOCIATED.
+NOTE from PE     0: MOM_restart: Unable to find tres_y_005   queried by pointer, probably because of the suspect comparison of pointers by ASSOCIATED.
+NOTE from PE     0: MOM_restart: Unable to find tres_x_006   queried by pointer, probably because of the suspect comparison of pointers by ASSOCIATED.
+NOTE from PE     0: MOM_restart: Unable to find tres_y_006   queried by pointer, probably because of the suspect comparison of pointers by ASSOCIATED.
+NOTE from PE     0: MOM_restart: Unable to find tres_x_007   queried by pointer, probably because of the suspect comparison of pointers by ASSOCIATED.
+NOTE from PE     0: MOM_restart: Unable to find tres_y_007   queried by pointer, probably because of the suspect comparison of pointers by ASSOCIATED.
+NOTE from PE     0: MOM_restart: Unable to find tres_x_008   queried by pointer, probably because of the suspect comparison of pointers by ASSOCIATED.
+NOTE from PE     0: MOM_restart: Unable to find tres_y_008   queried by pointer, probably because of the suspect comparison of pointers by ASSOCIATED.
+NOTE from PE     0: MOM_restart: Unable to find tres_x_009   queried by pointer, probably because of the suspect comparison of pointers by ASSOCIATED.
+NOTE from PE     0: MOM_restart: Unable to find tres_y_009   queried by pointer, probably because of the suspect comparison of pointers by ASSOCIATED.
+NOTE from PE     0: MOM_restart: Unable to find tres_x_010   queried by pointer, probably because of the suspect comparison of pointers by ASSOCIATED.
+NOTE from PE     0: MOM_restart: Unable to find tres_y_010   queried by pointer, probably because of the suspect comparison of pointers by ASSOCIATED.
+NOTE from PE     0: MOM_restart: Unable to find tres_x_011   queried by pointer, probably because of the suspect comparison of pointers by ASSOCIATED.
+NOTE from PE     0: MOM_restart: Unable to find tres_y_011   queried by pointer, probably because of the suspect comparison of pointers by ASSOCIATED.
+NOTE from PE     0: MOM_restart: Unable to find tres_x_012   queried by pointer, probably because of the suspect comparison of pointers by ASSOCIATED.
+NOTE from PE     0: MOM_restart: Unable to find tres_y_012   queried by pointer, probably because of the suspect comparison of pointers by ASSOCIATED.
+NOTE from PE    91: time_interp_external_mod: file INPUT/tu_segment_001.nc  has only one time level
+NOTE from PE    69: time_interp_external_mod: file INPUT/tu_segment_003.nc  has only one time level
+NOTE from PE    80: time_interp_external_mod: file INPUT/tu_segment_004.nc  has only one time level
+NOTE from PE    92: time_interp_external_mod: file INPUT/tu_segment_001.nc  has only one time level
+NOTE from PE    91: time_interp_external_mod: file INPUT/tu_segment_001.nc  has only one time level
+NOTE from PE    69: time_interp_external_mod: file INPUT/tu_segment_003.nc  has only one time level
+NOTE from PE    80: time_interp_external_mod: file INPUT/tu_segment_004.nc  has only one time level
+NOTE from PE    92: time_interp_external_mod: file INPUT/tu_segment_001.nc  has only one time level
+NOTE from PE    50: time_interp_external_mod: file INPUT/tu_segment_004.nc  has only one time level
+NOTE from PE    91: time_interp_external_mod: file INPUT/tu_segment_001.nc  has only one time level
+NOTE from PE    80: time_interp_external_mod: file INPUT/tu_segment_004.nc  has only one time level
+NOTE from PE    92: time_interp_external_mod: file INPUT/tu_segment_001.nc  has only one time level
+NOTE from PE    91: time_interp_external_mod: file INPUT/tu_segment_001.nc  has only one time level
+NOTE from PE    50: time_interp_external_mod: file INPUT/tu_segment_004.nc  has only one time level
+NOTE from PE    69: time_interp_external_mod: file INPUT/tz_segment_003.nc  has only one time level
+NOTE from PE    92: time_interp_external_mod: file INPUT/tu_segment_001.nc  has only one time level
+NOTE from PE    94: time_interp_external_mod: file INPUT/tu_segment_001.nc  has only one time level
+NOTE from PE    50: time_interp_external_mod: file INPUT/tu_segment_004.nc  has only one time level
+NOTE from PE    69: time_interp_external_mod: file INPUT/tz_segment_003.nc  has only one time level
+NOTE from PE    80: time_interp_external_mod: file INPUT/tz_segment_004.nc  has only one time level
+NOTE from PE    94: time_interp_external_mod: file INPUT/tu_segment_001.nc  has only one time level
+NOTE from PE    93: time_interp_external_mod: file INPUT/tu_segment_001.nc  has only one time level
+NOTE from PE    80: time_interp_external_mod: file INPUT/tz_segment_004.nc  has only one time level
+NOTE from PE    92: time_interp_external_mod: file INPUT/tz_segment_001.nc  has only one time level
+NOTE from PE    95: time_interp_external_mod: file INPUT/tu_segment_001.nc  has only one time level
+NOTE from PE    91: time_interp_external_mod: file INPUT/tz_segment_001.nc  has only one time level
+NOTE from PE    94: time_interp_external_mod: file INPUT/tu_segment_001.nc  has only one time level
+NOTE from PE    96: time_interp_external_mod: file INPUT/tu_segment_001.nc  has only one time level
+NOTE from PE    93: time_interp_external_mod: file INPUT/tu_segment_001.nc  has only one time level
+NOTE from PE    50: time_interp_external_mod: file INPUT/tz_segment_004.nc  has only one time level
+NOTE from PE    98: time_interp_external_mod: file INPUT/tu_segment_001.nc  has only one time level
+NOTE from PE    92: time_interp_external_mod: file INPUT/tz_segment_001.nc  has only one time level
+NOTE from PE    95: time_interp_external_mod: file INPUT/tu_segment_001.nc  has only one time level
+NOTE from PE    91: time_interp_external_mod: file INPUT/tz_segment_001.nc  has only one time level
+NOTE from PE    96: time_interp_external_mod: file INPUT/tu_segment_001.nc  has only one time level
+NOTE from PE    94: time_interp_external_mod: file INPUT/tu_segment_001.nc  has only one time level
+NOTE from PE    50: time_interp_external_mod: file INPUT/tz_segment_004.nc  has only one time level
+NOTE from PE    93: time_interp_external_mod: file INPUT/tu_segment_001.nc  has only one time level
+NOTE from PE    98: time_interp_external_mod: file INPUT/tu_segment_001.nc  has only one time level
+NOTE from PE    95: time_interp_external_mod: file INPUT/tu_segment_001.nc  has only one time level
+NOTE from PE    96: time_interp_external_mod: file INPUT/tu_segment_001.nc  has only one time level
+NOTE from PE    97: time_interp_external_mod: file INPUT/tu_segment_001.nc  has only one time level
+NOTE from PE    93: time_interp_external_mod: file INPUT/tu_segment_001.nc  has only one time level
+NOTE from PE    98: time_interp_external_mod: file INPUT/tu_segment_001.nc  has only one time level
+NOTE from PE    94: time_interp_external_mod: file INPUT/tz_segment_001.nc  has only one time level
+NOTE from PE    95: time_interp_external_mod: file INPUT/tu_segment_001.nc  has only one time level
+NOTE from PE    96: time_interp_external_mod: file INPUT/tu_segment_001.nc  has only one time level
+NOTE from PE    97: time_interp_external_mod: file INPUT/tu_segment_001.nc  has only one time level
+NOTE from PE    98: time_interp_external_mod: file INPUT/tu_segment_001.nc  has only one time level
+NOTE from PE    94: time_interp_external_mod: file INPUT/tz_segment_001.nc  has only one time level
+NOTE from PE    93: time_interp_external_mod: file INPUT/tz_segment_001.nc  has only one time level
+NOTE from PE    95: time_interp_external_mod: file INPUT/tz_segment_001.nc  has only one time level
+NOTE from PE    97: time_interp_external_mod: file INPUT/tu_segment_001.nc  has only one time level
+NOTE from PE    96: time_interp_external_mod: file INPUT/tz_segment_001.nc  has only one time level
+NOTE from PE    93: time_interp_external_mod: file INPUT/tz_segment_001.nc  has only one time level
+NOTE from PE    98: time_interp_external_mod: file INPUT/tz_segment_001.nc  has only one time level
+NOTE from PE    95: time_interp_external_mod: file INPUT/tz_segment_001.nc  has only one time level
+NOTE from PE    97: time_interp_external_mod: file INPUT/tu_segment_001.nc  has only one time level
+NOTE from PE    96: time_interp_external_mod: file INPUT/tz_segment_001.nc  has only one time level
+NOTE from PE    98: time_interp_external_mod: file INPUT/tz_segment_001.nc  has only one time level
+NOTE from PE    97: time_interp_external_mod: file INPUT/tz_segment_001.nc  has only one time level
+NOTE from PE    97: time_interp_external_mod: file INPUT/tz_segment_001.nc  has only one time level
+NOTE from PE    70: time_interp_external_mod: file INPUT/tu_segment_004.nc  has only one time level
+NOTE from PE    70: time_interp_external_mod: file INPUT/tu_segment_004.nc  has only one time level
+NOTE from PE    70: time_interp_external_mod: file INPUT/tu_segment_004.nc  has only one time level
+NOTE from PE    70: time_interp_external_mod: file INPUT/tu_segment_004.nc  has only one time level
+NOTE from PE    70: time_interp_external_mod: file INPUT/tz_segment_004.nc  has only one time level
+NOTE from PE    79: time_interp_external_mod: file INPUT/tu_segment_003.nc  has only one time level
+NOTE from PE    70: time_interp_external_mod: file INPUT/tz_segment_004.nc  has only one time level
+NOTE from PE    79: time_interp_external_mod: file INPUT/tu_segment_003.nc  has only one time level
+NOTE from PE    90: time_interp_external_mod: file INPUT/tu_segment_001.nc  has only one time level
+NOTE from PE    89: time_interp_external_mod: file INPUT/tu_segment_003.nc  has only one time level
+NOTE from PE    79: time_interp_external_mod: file INPUT/tu_segment_003.nc  has only one time level
+NOTE from PE    90: time_interp_external_mod: file INPUT/tu_segment_001.nc  has only one time level
+NOTE from PE    89: time_interp_external_mod: file INPUT/tu_segment_003.nc  has only one time level
+NOTE from PE    90: time_interp_external_mod: file INPUT/tu_segment_001.nc  has only one time level
+NOTE from PE    79: time_interp_external_mod: file INPUT/tu_segment_003.nc  has only one time level
+NOTE from PE    89: time_interp_external_mod: file INPUT/tu_segment_003.nc  has only one time level
+NOTE from PE    90: time_interp_external_mod: file INPUT/tu_segment_001.nc  has only one time level
+NOTE from PE    79: time_interp_external_mod: file INPUT/tz_segment_003.nc  has only one time level
+NOTE from PE    89: time_interp_external_mod: file INPUT/tu_segment_003.nc  has only one time level
+NOTE from PE    79: time_interp_external_mod: file INPUT/tz_segment_003.nc  has only one time level
+NOTE from PE    99: time_interp_external_mod: file INPUT/tu_segment_001.nc  has only one time level
+NOTE from PE    90: time_interp_external_mod: file INPUT/tz_segment_001.nc  has only one time level
+NOTE from PE    89: time_interp_external_mod: file INPUT/tz_segment_003.nc  has only one time level
+NOTE from PE    99: time_interp_external_mod: file INPUT/tu_segment_001.nc  has only one time level
+NOTE from PE    90: time_interp_external_mod: file INPUT/tz_segment_001.nc  has only one time level
+NOTE from PE    89: time_interp_external_mod: file INPUT/tz_segment_003.nc  has only one time level
+NOTE from PE    99: time_interp_external_mod: file INPUT/tu_segment_001.nc  has only one time level
+NOTE from PE    99: time_interp_external_mod: file INPUT/tu_segment_001.nc  has only one time level
+NOTE from PE    99: time_interp_external_mod: file INPUT/tz_segment_001.nc  has only one time level
+NOTE from PE    99: time_interp_external_mod: file INPUT/tz_segment_001.nc  has only one time level
+
+WARNING from PE     2: categorize_axes: Failed to identify x- and y- axes in the axis list (nx_segment_002, ny_segment_002, time) of a variable being read from INPUT/obgc_obc.nc
+
+
+WARNING from PE     1: categorize_axes: Failed to identify x- and y- axes in the axis list (nx_segment_002, ny_segment_002, time) of a variable being read from INPUT/obgc_obc.nc
+
+
+WARNING from PE     5: categorize_axes: Failed to identify x- and y- axes in the axis list (nx_segment_004, ny_segment_004, time) of a variable being read from INPUT/obgc_obc.nc
+
+NOTE from PE    59: time_interp_external_mod: file INPUT/tu_segment_003.nc  has only one time level
+NOTE from PE    59: time_interp_external_mod: file INPUT/tu_segment_003.nc  has only one time level
+NOTE from PE    59: time_interp_external_mod: file INPUT/tu_segment_003.nc  has only one time level
+
+WARNING from PE     0: categorize_axes: Failed to identify x- and y- axes in the axis list (nx_segment_002, ny_segment_002, time) of a variable being read from INPUT/obgc_obc.nc
+
+NOTE from PE    59: time_interp_external_mod: file INPUT/tu_segment_003.nc  has only one time level
+NOTE from PE    59: time_interp_external_mod: file INPUT/tz_segment_003.nc  has only one time level
+NOTE from PE    59: time_interp_external_mod: file INPUT/tz_segment_003.nc  has only one time level
+
+WARNING from PE    19: categorize_axes: Failed to identify x- and y- axes in the axis list (nx_segment_003, ny_segment_003, time) of a variable being read from INPUT/obgc_obc.nc
+
+
+WARNING from PE    10: categorize_axes: Failed to identify x- and y- axes in the axis list (nx_segment_003, ny_segment_003, time) of a variable being read from INPUT/obgc_obc.nc
+
+
+WARNING from PE     4: categorize_axes: Failed to identify x- and y- axes in the axis list (nx_segment_002, ny_segment_002, time) of a variable being read from INPUT/obgc_obc.nc
+
+
+WARNING from PE    11: categorize_axes: Failed to identify x- and y- axes in the axis list (nx_segment_004, ny_segment_004, time) of a variable being read from INPUT/obgc_obc.nc
+
+NOTE from PE     2: time_interp_external_mod: file INPUT/tu_segment_002.nc  has only one time level
+NOTE from PE     0: time_interp_external_mod: file INPUT/tu_segment_002.nc  has only one time level
+NOTE from PE     1: time_interp_external_mod: file INPUT/tu_segment_002.nc  has only one time level
+NOTE from PE     2: time_interp_external_mod: file INPUT/tu_segment_002.nc  has only one time level
+NOTE from PE     0: time_interp_external_mod: file INPUT/tu_segment_002.nc  has only one time level
+NOTE from PE     1: time_interp_external_mod: file INPUT/tu_segment_002.nc  has only one time level
+NOTE from PE     2: time_interp_external_mod: file INPUT/tu_segment_002.nc  has only one time level
+NOTE from PE     0: time_interp_external_mod: file INPUT/tu_segment_002.nc  has only one time level
+NOTE from PE     1: time_interp_external_mod: file INPUT/tu_segment_002.nc  has only one time level
+NOTE from PE     2: time_interp_external_mod: file INPUT/tu_segment_002.nc  has only one time level
+NOTE from PE     0: time_interp_external_mod: file INPUT/tu_segment_002.nc  has only one time level
+NOTE from PE     1: time_interp_external_mod: file INPUT/tu_segment_002.nc  has only one time level
+NOTE from PE     0: time_interp_external_mod: file INPUT/tz_segment_002.nc  has only one time level
+NOTE from PE     2: time_interp_external_mod: file INPUT/tz_segment_002.nc  has only one time level
+NOTE from PE     1: time_interp_external_mod: file INPUT/tz_segment_002.nc  has only one time level
+NOTE from PE     2: time_interp_external_mod: file INPUT/tz_segment_002.nc  has only one time level
+NOTE from PE     0: time_interp_external_mod: file INPUT/tz_segment_002.nc  has only one time level
+NOTE from PE     1: time_interp_external_mod: file INPUT/tz_segment_002.nc  has only one time level
+NOTE from PE     5: time_interp_external_mod: file INPUT/tu_segment_004.nc  has only one time level
+NOTE from PE     5: time_interp_external_mod: file INPUT/tu_segment_004.nc  has only one time level
+NOTE from PE     5: time_interp_external_mod: file INPUT/tu_segment_004.nc  has only one time level
+NOTE from PE    19: time_interp_external_mod: file INPUT/tu_segment_003.nc  has only one time level
+NOTE from PE     5: time_interp_external_mod: file INPUT/tu_segment_004.nc  has only one time level
+NOTE from PE    19: time_interp_external_mod: file INPUT/tu_segment_003.nc  has only one time level
+NOTE from PE     5: time_interp_external_mod: file INPUT/tz_segment_004.nc  has only one time level
+NOTE from PE    19: time_interp_external_mod: file INPUT/tu_segment_003.nc  has only one time level
+NOTE from PE     5: time_interp_external_mod: file INPUT/tz_segment_004.nc  has only one time level
+NOTE from PE    19: time_interp_external_mod: file INPUT/tu_segment_003.nc  has only one time level
+NOTE from PE    19: time_interp_external_mod: file INPUT/tz_segment_003.nc  has only one time level
+NOTE from PE    19: time_interp_external_mod: file INPUT/tz_segment_003.nc  has only one time level
+NOTE from PE     4: time_interp_external_mod: file INPUT/tu_segment_002.nc  has only one time level
+NOTE from PE    10: time_interp_external_mod: file INPUT/tu_segment_003.nc  has only one time level
+NOTE from PE     4: time_interp_external_mod: file INPUT/tu_segment_002.nc  has only one time level
+NOTE from PE    10: time_interp_external_mod: file INPUT/tu_segment_003.nc  has only one time level
+NOTE from PE     4: time_interp_external_mod: file INPUT/tu_segment_002.nc  has only one time level
+NOTE from PE    10: time_interp_external_mod: file INPUT/tu_segment_003.nc  has only one time level
+NOTE from PE     4: time_interp_external_mod: file INPUT/tu_segment_002.nc  has only one time level
+NOTE from PE    11: time_interp_external_mod: file INPUT/tu_segment_004.nc  has only one time level
+NOTE from PE    10: time_interp_external_mod: file INPUT/tu_segment_003.nc  has only one time level
+NOTE from PE     4: time_interp_external_mod: file INPUT/tz_segment_002.nc  has only one time level
+NOTE from PE    11: time_interp_external_mod: file INPUT/tu_segment_004.nc  has only one time level
+NOTE from PE     4: time_interp_external_mod: file INPUT/tz_segment_002.nc  has only one time level
+NOTE from PE    10: time_interp_external_mod: file INPUT/tz_segment_003.nc  has only one time level
+NOTE from PE    11: time_interp_external_mod: file INPUT/tu_segment_004.nc  has only one time level
+NOTE from PE    10: time_interp_external_mod: file INPUT/tz_segment_003.nc  has only one time level
+NOTE from PE    11: time_interp_external_mod: file INPUT/tu_segment_004.nc  has only one time level
+NOTE from PE    11: time_interp_external_mod: file INPUT/tz_segment_004.nc  has only one time level
+NOTE from PE    11: time_interp_external_mod: file INPUT/tz_segment_004.nc  has only one time level
+
+WARNING from PE    90: categorize_axes: Failed to identify x- and y- axes in the axis list (nx_segment_004, ny_segment_004, time) of a variable being read from INPUT/obgc_obc.nc
+
+
+WARNING from PE    99: categorize_axes: Failed to identify x- and y- axes in the axis list (nx_segment_003, ny_segment_003, time) of a variable being read from INPUT/obgc_obc.nc
+
+
+WARNING from PE     0: categorize_axes: Failed to identify x- and y- axes in the axis list (nx_segment_004, ny_segment_004, time) of a variable being read from INPUT/obgc_obc.nc
+
+NOTE from PE    90: time_interp_external_mod: file INPUT/tu_segment_004.nc  has only one time level
+NOTE from PE    90: time_interp_external_mod: file INPUT/tu_segment_004.nc  has only one time level
+NOTE from PE    90: time_interp_external_mod: file INPUT/tu_segment_004.nc  has only one time level
+NOTE from PE    90: time_interp_external_mod: file INPUT/tu_segment_004.nc  has only one time level
+NOTE from PE    90: time_interp_external_mod: file INPUT/tz_segment_004.nc  has only one time level
+NOTE from PE    90: time_interp_external_mod: file INPUT/tz_segment_004.nc  has only one time level
+NOTE from PE    99: time_interp_external_mod: file INPUT/tu_segment_003.nc  has only one time level
+NOTE from PE    99: time_interp_external_mod: file INPUT/tu_segment_003.nc  has only one time level
+NOTE from PE    99: time_interp_external_mod: file INPUT/tu_segment_003.nc  has only one time level
+NOTE from PE    99: time_interp_external_mod: file INPUT/tu_segment_003.nc  has only one time level
+NOTE from PE    99: time_interp_external_mod: file INPUT/tz_segment_003.nc  has only one time level
+NOTE from PE    99: time_interp_external_mod: file INPUT/tz_segment_003.nc  has only one time level
+NOTE from PE     0: time_interp_external_mod: file INPUT/tu_segment_004.nc  has only one time level
+NOTE from PE     0: time_interp_external_mod: file INPUT/tu_segment_004.nc  has only one time level
+NOTE from PE     0: time_interp_external_mod: file INPUT/tu_segment_004.nc  has only one time level
+NOTE from PE     0: time_interp_external_mod: file INPUT/tu_segment_004.nc  has only one time level
+NOTE from PE     0: time_interp_external_mod: file INPUT/tz_segment_004.nc  has only one time level
+NOTE from PE     0: time_interp_external_mod: file INPUT/tz_segment_004.nc  has only one time level
+
+WARNING from PE     4: categorize_axes: Failed to identify x- and y- axes in the axis list (nx_segment_003, ny_segment_003, time) of a variable being read from INPUT/obgc_obc.nc
+
+NOTE from PE     4: time_interp_external_mod: file INPUT/tu_segment_003.nc  has only one time level
+NOTE from PE     4: time_interp_external_mod: file INPUT/tu_segment_003.nc  has only one time level
+NOTE from PE     4: time_interp_external_mod: file INPUT/tu_segment_003.nc  has only one time level
+NOTE from PE     4: time_interp_external_mod: file INPUT/tu_segment_003.nc  has only one time level
+NOTE from PE     4: time_interp_external_mod: file INPUT/tz_segment_003.nc  has only one time level
+NOTE from PE     4: time_interp_external_mod: file INPUT/tz_segment_003.nc  has only one time level
+
+WARNING from PE     0: The runtime parameter SAL_SCALAR_VALUE is being set via its soon to be obsolete name of TIDE_SAL_SCALAR_VALUE.  Please migrate to using SAL_SCALAR_VALUE.
+
+
+WARNING from PE     0: The runtime parameter TIDE_USE_EQ_PHASE is also being set consistently via its older name of OBC_TIDE_ADD_EQ_PHASE.  Please migrate to only using TIDE_USE_EQ_PHASE.
+
+NOTE from PE     0: MOM_harmonic_analysis: HA_END_TIME is zero or negative. Harmonic analysis will not be performed.

@@ -9,9 +9,9 @@
 # shortpath: /scratch/v45
 
 queue: normalsr
-ncpus: 208
+ncpus: 1976
 jobfs: 10GB
-mem: 1000GB
+mem: 9500GB
 
 
 walltime: 10:00:00
@@ -25,7 +25,7 @@ input:
     - /g/data/vk83/configurations/inputs/access-om3/share/meshes/share/2024.09.16/JRA55do-drof-ESMFmesh.nc
     - /scratch/nm03/ee8016/regional_mom6_configs/Ningaloo_domain/hgrid.nc
     - /scratch/nm03/ee8016/regional_mom6_configs/Ningaloo_domain/vcoord.nc
-    - /scratch/nm03/ee8016/regional_mom6_configs/Ningaloo_domain/bathymetry.nc
+    - /scratch/nm03/ee8016/regional_mom6_configs/Ningaloo_domain/bathymetry_mod.nc
     - /scratch/nm03/ee8016/regional_mom6_configs/Ningaloo_domain/init_tracers_modified.nc
     - /scratch/nm03/ee8016/regional_mom6_configs/Ningaloo_domain/obgc_obc.nc
     - /scratch/nm03/ee8016/regional_mom6_configs/Ningaloo_domain/init_eta.nc

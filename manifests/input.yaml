@@ -3381,11 +3381,11 @@ work/INPUT/atmos/fx/sftof/gr/v20240531/sftof_input4MIPs_atmosphericState_OMIP_MR
   hashes:
     binhash: 7f98fc486410cff8df3232d390e5a05b
     md5: f5034ec4d5228d648be6375b13ed2c98
-work/INPUT/bathymetry.nc:
-  fullpath: /scratch/nm03/ee8016/regional_mom6_configs/Ningaloo_domain/bathymetry.nc
+work/INPUT/bathymetry_mod.nc:
+  fullpath: /scratch/nm03/ee8016/regional_mom6_configs/Ningaloo_domain/bathymetry_mod.nc
   hashes:
-    binhash: ab00810bb91ef454fc427e93c9b84532
-    md5: d4dfa9e5d55ee026fd332626bf682a7b
+    binhash: 0f34e168bce2d838ad97275bef03aa56
+    md5: 4d97f4b31fbfcb4ff0759910506c883c
 work/INPUT/dust_DS.nc:
   fullpath: /scratch/nm03/ee8016/regional_mom6_configs/Ningaloo_domain/dust_DS.nc
   hashes:
